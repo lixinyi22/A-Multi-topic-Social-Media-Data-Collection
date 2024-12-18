@@ -1,18 +1,17 @@
-# A-Multi-topic-Social-Media-Data-Collection
-This repository is the open source for the multi-topic social media dataset collected from Sina Weibo.
-# **A Multi-topic Social Media Data Collection**
+# Weibo-MT: A Multi-theme Rich-content Social Media Data Collection
+This repository is the open source for the multi-theme social media dataset collected from Sina Weibo.
 
 ## 1. Introduction
 
-This dataset is a multi-topic social media dataset collected from Sina Weibo, consists of 7,705 original posts, 202,238 comments, and 54,401 user profiles, encompassing both post publishers and commenters. The collected posts span an average of 2,771 days for each topic.
+This dataset is a multi-theme social media dataset collected from Sina Weibo, consists of 7,705 original posts, 202,238 comments, and 54,401 user profiles, encompassing both post publishers and commenters. The collected posts span an average of 2,771 days for each theme.
 
-**•** **Topics Covered** : Travel, Movies, Psychology and Cars
+**•** **themes Covered** : Travel, Movie, Psychology and Car
 
 ## 2. Dataset Structure
 
 -	**File Format** : csv
 
--	**topic_post.csv**:
+-	**theme_post.csv**:
 
 -	**post_id** : Unique identifier for the post. The **post_id** remains consistent across other files in the dataset.
 
@@ -28,7 +27,7 @@ This dataset is a multi-topic social media dataset collected from Sina Weibo, co
 
 -	**post_hashtags** : The list of hashtags included in the post.
 
--	**topic_comments.csv**:
+-	**theme_comments.csv**:
 
 -	**comment_id** : A unique identifier for the comment. The **comment_id** remains consistent across other files in the dataset.
 
@@ -44,7 +43,7 @@ This dataset is a multi-topic social media dataset collected from Sina Weibo, co
 
 -	**sentiment** : The sentiment label for the comment’s content, categorized into five levels:  *Very Negative* ,  *Negative* ,  *Neutral* ,  *Positive* , and  *Very Positive* .
 
--	**topic_user_with_post.csv & topic_user_with_comment.csv**
+-	**theme_user_with_post.csv & theme_user_with_comment.csv**
 
 -	**user_id** : The unique identifier of the user.
 
@@ -76,8 +75,8 @@ This dataset is a multi-topic social media dataset collected from Sina Weibo, co
 
 ## 3. Data Preprocessing
 
--	**Collection** : We collected the original posts from Sina Weibo platform using the official API by searching related hashtags and keywords. Specifically, we selected the ’20 Minute Park Theory’ as the focal topic within the domain of psychology.
-Subsequently, we identified hashtags with a high degree of relevance to the subject and filtered these posts, thereby guaranteeing a more concentrated topical relevance. 
+-	**Collection** : We collected the original posts from Sina Weibo platform using the official API by searching related hashtags and keywords. Specifically, we selected the ’20 Minute Park Theory’ as the focal theme within the domain of psychology.
+Subsequently, we identified hashtags with a high degree of relevance to the subject and filtered these posts, thereby guaranteeing a more concentrated themeal relevance. 
 
 -	**Cleaning**: To maintain a dataset devoid of discriminatory content, we employed the OpenAI GPT-4o-mini API for the textual screening of each post. Additionally, an analysis of post lengths revealed that all posts contain a minimum of five characters, negating the need for further filtering. 
 
